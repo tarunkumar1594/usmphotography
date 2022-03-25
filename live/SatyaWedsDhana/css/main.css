@@ -8,26 +8,29 @@
 /* ------------------------------------------------------------------------------
 	Slider Images URL
 -------------------------------------------------------------------------------*/
+#first-slider .item{
+	background-size: cover;
+    background-repeat: no-repeat;
+
+	overflow-y: hidden ! important;
+	overflow-x: hidden ! important;
+	/* background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right; */
+}
 
 #first-slider .slide1 {
-    background-image: url('../sndImg/img1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+	background-image: url('../sndImg/img1.jpg');
+
 }
 #first-slider .slide2 {
   background-image: url('../sndImg/img2.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 #first-slider .slide3 {
   background-image: url('../sndImg/img3.jpg');
-      background-size: cover;
-    background-repeat: no-repeat;
 }
 #first-slider .slide4 {
 	background-image: url('../sndImg/img4.jpg');
-		background-size: cover;
-	  background-repeat: no-repeat;
   }
 /* ------------------------------------------------------------------------------
 	Typography
@@ -141,7 +144,7 @@ ul li {
 }
 #header .header-content {
 	margin: 0 auto;
-	padding: 5px 30px;
+	padding: 5px 30px !important;
 	width: 100%;
 	-moz-transition: padding 0.3s;
 	-o-transition: padding 0.3s;
@@ -367,7 +370,7 @@ ul li {
   background-image: none;
 }
 #first-slider .carousel .item {
-  min-height: 750px;
+  min-height: 500px;
   height: 100%;
   width:100%;
 }
