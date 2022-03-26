@@ -11,26 +11,25 @@
 #first-slider .item{
 	background-size: cover;
     background-repeat: no-repeat;
-
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 	overflow-y: hidden ! important;
 	overflow-x: hidden ! important;
-	/* background-size: contain;
-	background-repeat: no-repeat;
-	background-position: right; */
 }
 
 #first-slider .slide1 {
-	background-image: url('../sndImg/img1.jpg');
-
+	background: url('../sndImg/img1.jpg') no-repeat center center fixed;
 }
 #first-slider .slide2 {
-  background-image: url('../sndImg/img2.jpg');
+	background: url('../sndImg/img2.jpg') no-repeat center center fixed;
 }
 #first-slider .slide3 {
-  background-image: url('../sndImg/img3.jpg');
+	background: url('../sndImg/img3.jpg') no-repeat center center fixed;
 }
 #first-slider .slide4 {
-	background-image: url('../sndImg/img4.jpg');
+	background: url('../sndImg/img4.jpg') no-repeat center center fixed;
   }
 /* ------------------------------------------------------------------------------
 	Typography
@@ -143,8 +142,7 @@ ul li {
 	background: transparent;
 }
 #header .header-content {
-	margin: 0 auto;
-	padding: 5px 30px !important;
+	padding: 0px 15px !important;
 	width: 100%;
 	-moz-transition: padding 0.3s;
 	-o-transition: padding 0.3s;
@@ -370,9 +368,10 @@ ul li {
   background-image: none;
 }
 #first-slider .carousel .item {
-  min-height: 500px;
-  height: 100%;
-  width:100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .carousel-inner .item .container {
@@ -519,7 +518,6 @@ Common Styles
 ------------------------------------------------------------------------------- */
 .section-header{	
 text-align: center;	
-padding-bottom: 30px;
 }
 .section-header h2{
 	
@@ -688,8 +686,8 @@ About
 }
 .video-middle {
 	display: block;
-	margin: 0px 15% 0px 15%;
-	max-width: 70%;
+	margin: 0px 2% 0px 2%;
+	max-width: 96%;
 }
 
 .img-middle{
@@ -1006,4 +1004,9 @@ ul.list-default li {
 	color: #e84545;
 	font-size: 11px;
 	margin: 0 2px;
+}
+
+
+.carousel .item {
+    overflow:hidden;
 }
